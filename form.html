@@ -5,87 +5,143 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-      <header class="page-header">
-          <ul class="mobile-menu">
-              <li><a href="#main">Главная</a></li>
-              <li><a href="#foto-video">фото и видео</a></li>
-              <li><a href="#comment">Форма отзыва</a></li>
-              <li><a href="HTML academy">HTML academy</a></li>
+      <header class="page-header container">
+        <div class="closed"><img src="http://placehold.it/150x100"></div>
+          <ul class="menu">
+              <li class="menu__main"><a href="#">Главная</a></li>
+              <li class="menu__foto"><a href="#">Фото и видео</a></li>
+              <li class="menu__form"><a href="#">Форма отзыва</a></li>
+              <li class="menu__academy"><a href="#">HTML academy</a></li>
           </ul>
           <div class="logo"><img src="http://placehold.it/150x100"></div>
+          <div class="strips"><img src="http://placehold.it/150x100"></div>
       </header>
-      <main>
-          <div class="top menu">
-              <div class="logotyle-mobile"><img src="http://placehold.it/150x100"></div>
-              <!Hamburger!>
-              <div class="logo-sedona"><img src="http://placehold.it/150x100"></div>
-          <div class="mainpage content">
-             <h1>Оставьте свой отзыв</h1>
-              <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-              <div class="form">
-                  <div class="form-name">
-                      <h1>Представьтесь, пожалуйста:</h1>
+      <main class="container">
+          <div class="slogan">
+              <div class="slogan__text"><img src="http://placehold.it/150x100"></div>
+        </div>
+          <div class="recall">
+             <p class="recall__text">Оставьте свой отзыв</p>
+              <p class="recall__reasons">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            </div>
+              <form class="form">
+                <div class="form__name">
+                  <div class="form__title">
+                      <p>Представьтесь, пожалуйста:</p>
+                </div>
+                <div class="form__name-wrapper">
+                  <div class="name">
                   <label for="name">Имя</label>
-                  <input type="text" id="name" placeholder="Петр">
+                  <input type="text" id="name" name="name" placeholder="Петр">
                   </div>
-                  <div class="form-surname">
+                </div>
+                  <div class="form__name-wrapper">
+                    <div class="surname">
                   <label for="surname">Фамилия</label>
-                  <input type="text" id="surname" placeholder="Иванов">
+                  <input type="text" id="surname" name="surname" placeholder="Иванов">
+                    </div>
                   </div>
-                   <div class="second-name">
+                   <div class="form__name-wrapper">
+                     <div class="second-name">
                   <label for="second-name">Отчество</label>
-                  <input type="text" id="second-name" placeholder="Александрович">
-                  </div>  
-              </div>
-              <div class="contact info">
-                  <div class="phone">
-                  <h1>Контактная информация:</h1>
+                  <input type="text" id="second-name" name="second-name" placeholder="Александрович">
+                     </div>
+                  </div>
+                </div>
+                <div class="form__contacts">
+                  <div class="form__title">
+                  <p>Контактная информация:</p>
+                </div>
+                  <div class="form__contacts-wrapper">
+                    <div class="phone">
                       <label for="phone">Контактный телефон:</label>
-                  <input type="text" id="phone" placeholder="Введите телефон">
+                  <input type="text" id="phone" name="phone" placeholder="Введите телефон">
+                    </div>
                   </div>
+                  <div class="form__text-error">
+                  <span>Ошибка, перепроверьте номер</span>
+                  </div>
+                  <div class="form__contacts-wrapper">
                   <div class="email">
-                  <h1>Контактная информация:</h1>
                       <label for="email">Электронная почта:</label>
-                  <input type="email" id="email" placeholder="Введите e-mail">
+                  <input type="email" id="email" name="email" placeholder="Введите e-mail">
                   </div>
-              </div>
-              <div class="impression">
-                  <h1>Ваше общее впечатление:</h1>
+                </div>
+                </div>
+                <div class="form__feeling">
+              <div class="form__title">
+                  <p>Ваше общее впечатление:</p>
+                </div>
+                  <div class="form__feeling-wrapper">
+                    <div class="yes">
                   <label>
-                      <input type="checkbox"> Скорее положительное </label>
+                      <input type="radio" name="choice" value="yes" checked> Скорее положительное
+                    </label>
+                    </div>
+                  </div>
+                  <div class="form__feeling-wrapper">
+                    <div class="no">
                   <label>
-                      <input type="checkbox"> Скорее отрицательное </label>
+                      <input type="radio" name="choice" value="no"> Скорее отрицательное </label>
+                    </div>
+                  </div>
+                  <div class="form__feeling-wrapper">
+                    <div class="maybe">
                   <label>
-                      <input type="checkbox"> Затрудняюсь ответить </label>
-              </div>
-               <div class="attraction">
-                  <h1>Посещенные достопримечательности:</h1>
+                      <input type="radio" name="chocie" value="maybe" > Затрудняюсь ответить </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__places">
+               <div class="form__title">
+                  <p>Посещенные достопримечательности:</p>
+                </div>
+                  <div class="form__places-wrapper">
+                    <div class="bridge">
                   <label>
-                      <input type="checkbox" checked> Мост дьявола</label>
+                      <input type="checkbox" name="bridge" checked> Мост дьявола</label>
+                    </div>
+                  </div>
+                  <div class="form__places-wrapper">
+                    <div class="park">
                   <label>
-                      <input type="checkbox" checked> Слайд-парк</label>
+                      <input type="checkbox" name="park" checked> Слайд-парк</label>
+                    </div>
+                  </div>
+                  <div class="form__places-wrapper">
+                    <div class="bell">
                   <label>
-                      <input type="checkbox"> Гора-колокол</label>
+                      <input type="checkbox" name="bell"> Гора-колокол</label>
+                    </div>
+                  </div>
+                  <div class="form__places-wrapper">
+                    <div class="red">
                    <label>
-                      <input type="checkbox" checked> Красные скалы</label>
-              </div>
-              <div class="emotion">
-                  <h1>Опишите свои эмоции</h1>
+                      <input type="checkbox" name="red" checked> Красные скалы</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__emotion">
+              <div class="form__title">
+                  <p>Опишите свои эмоции</p>
+                </div>
+                  <div class="form__emotion-wrapper">
                   <textarea>
                       <p>Опишите подробно все свои восторги</p>
                   </textarea>
-              </div>
+                  </div>
+                </div>
+        </form>
               <div class="buttons">
                   <input type="submit" value="Отправить отзыв">
               </div>
-              </div> 
       </main>
-      <footer class="page-footer">
-          <a href="#visitsedona">#visitsedona</a>
-          <div class="icons">
-              <a class="social social-tw" href="..."></a>
-              <a class="social social-fb" href="..."></a>
-              <a class="social social-yt" href="..."></a>
+      <footer class="page-footer container">
+          <a href="#">#visitsedona</a>
+          <div class="social">
+              <a class="social__tw" href="..."></a>
+              <a class="social__fb" href="..."></a>
+              <a class="social__yt" href="..."></a>
           </div>
           <section class="info">
               Разработано
