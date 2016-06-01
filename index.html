@@ -7,14 +7,16 @@
   <body>
       <header class="page-header container">
         <div class="closed"><img src="http://placehold.it/150x100"></div>
-          <ul class="menu">
-              <li class="menu__main"><a href="#">Главная</a></li>
-              <li class="menu__foto"><a href="#">Фото и видео</a></li>
-              <li class="menu__form"><a href="#">Форма отзыва</a></li>
-              <li class="menu__academy"><a href="#">HTML academy</a></li>
+        <div class="menu">
+          <ul class="menu__items">
+              <li class="menu__items-choice"><a href="#">Главная</a></li>
+              <li class="menu__items-choice"><a href="#">Фото и видео</a></li>
+              <li class="menu__items-choice"><a href="#">Форма отзыва</a></li>
+              <li class="menu__items-choice"><a href="#">HTML academy</a></li>
           </ul>
+          <div class="menu__control"><img src="http://placehold.it/150x100"></div>
+        </div>
           <div class="logo"><img src="http://placehold.it/150x100"></div>
-          <div class="strips"><img src="http://placehold.it/150x100"></div>
       </header>
       <main class="container">
           <div class="slogan">
@@ -26,58 +28,66 @@
           </div>
                   <div class="content">
                      <div class="pictures">
+                       <div class="pictures__text-wrapper">
                          <p class="pictures__title">Настоящий городок</p>
-                         <p class="pictures__number">-№1-</p>
+                         <pre class="pictures__number">-№1-</pre>
                          <p class="pictires__text">Седона не атракцион для туристов там течет своя жизнь</p>
+                       </div>
                          <div class="pictures__view"><img src="http://placehold.it/150x100"></div>
-                         <div class="facilities">
+                    </div>
+                    <div class="facilities">
+                         <div class="facilities__item">
                              <div class="facilities__image"></div>
                              <div class="facilities__name">Жилье</div>
                              <div class="facilities__text">
                                  Рекомендуем пожить в настоящем мотеле, все как в кино!
                              </div>
                          </div>
-                         <div class="facilities">
+                         <div class="facilities__item">
                              <div class="facilities__image"></div>
                              <div class="facilities__name">Сувениры</div>
                              <div class="facilities__text">
                                  Не только китайского, но и местного производства!
                              </div>
                          </div>
-                         <div class="facilities">
+                         <div class="facilities__item">
                              <div class="facilities__image"></div>
                              <div class="facilities__name">Еда</div>
                              <div class="facilities__text">
                                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                              </div>
-                         </div>
                       </div>
+                         </div>
                       <div class="pictures">
+                        <div class="pictures__text-wrapper">
                          <p class="pictures__title">Там есть мост дьявола</p>
-                         <p class="pictures__number">-№2-</p>
+                         <pre class="pictures__number">-№2-</pre>
                          <p class="pictures__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                        </div>
                          <div class="pictures__view"><img src="http://placehold.it/150x100"></div>
                   </div>
-                      <div class="why">
-                         <p class="why__name">Небольшая площадь</p>
-                         <p class="why__number">-№3-</p>
-                         <p class="why__text">Все достопримечательности находятся очень близко</p>
+                    <div class="info">
+                      <div class="info__block">
+                         <p class="info__name">Небольшая площадь</p>
+                         <pre class="info__number">-№3-</pre>
+                         <p class="info__text">Все достопримечательности находятся очень близко</p>
                       </div>
-                      <div class="why">
-                         <p class="why__name">Красивая дорога</p>
-                         <p class="why__number">-№4-</p>
-                         <p class="why__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                      <div class="info__block">
+                         <p class="info__name">Красивая дорога</p>
+                         <pre class="info__number">-№4-</pre>
+                         <p class="info__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                       </div>
-                      <div class="why">
-                         <p class="why__name">Мало туристов</p>
-                         <p class="why__number">-№5-</p>
-                         <p class="why__text">Большинство едет в Гранд Каньон и толпится там</p>
+                      <div class="info__block">
+                         <p class="info__name">Мало туристов</p>
+                         <pre class="info__number">-№5-</pre>
+                         <p class="info__text">Большинство едет в Гранд Каньон и толпится там</p>
                       </div>
+                    </div>
                       <div class="date">
                           <p class="date__question">Заинтересовались?</p>
                           <p class="date__answer">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                           <div class="buttons">
-                         <input type="submit" value="Найти гостиницу">
+                           <div class="hotel">
+                             <a class="hotel__find" href="#">Найти гостиницу</a>
                         </div>
                       </div>
                       <div class="map"><img src="http://placehold.it/150x100"></div>
@@ -86,9 +96,9 @@
       <footer class="page-footer container">
           <a href="#">#visitsedona</a>
           <div class="social">
-              <a class="social__tw" href="..."></a>
-              <a class="social__fb" href="..."></a>
-              <a class="social__yt" href="..."></a>
+              <a class="social__link social__link--tw" href="#"></a>
+              <a class="social__link social__link--fb" href="#"></a>
+              <a class="social__link social__link--yt" href="#"></a>
           </div>
           <section class="info">
               Разработано
