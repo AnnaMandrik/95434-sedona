@@ -1,9 +1,9 @@
 @import "style.less";
 
-.form__name-wrapper{
+.form__name-wrapper input[type="text"]{
   background-color: @grey-blue;
 }
-.form__emotion-wrapper{
+textarea{
   background-color: @grey-blue;
 }
 
@@ -15,3 +15,53 @@
 .form__feeling-wrapper input [type="radio"]{
   background-color: @grey-blue;
 }
+.form__contacts-wrapper input [type="text"]{
+  background-color: @grey-blue;
+}
+.form__contacts-wrapper input [type="email"]{
+  background-color: @grey-blue;
+}
+.form__name{
+  .indent(20px);
+}
+.form__contacts{
+  .indent(20px);
+}
+.form__feeling{
+  .indent(20px);
+}
+.form__places{
+  .indent(20px);
+}
+.form__emotion{
+  .indent(20px);
+}
+.form__title{
+  font-size: 18px;
+  font-weight: bold;
+
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @black;
+  padding: 5px;
+}
+textarea p{
+  font-size: 18px;
+  font-weight: normal;
+
+  line-height: 24px;
+  text-transform: lowercase;
+  color: @black;
+  padding: 10px;
+}
+.form{
+  text-align: center;
+}
+label{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: @black;
+}
+
