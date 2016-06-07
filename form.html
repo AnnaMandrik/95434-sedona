@@ -2,25 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
       <header class="page-header container">
-        <div class="closed"><img src="http://placehold.it/150x100"></div>
         <div class="menu">
+        <div class="closed"><img src="img/icon-cross.svg"></div>
           <ul class="menu__items">
               <li class="menu__items-choice"><a href="#">Главная</a></li>
               <li class="menu__items-choice"><a href="#">Фото и видео</a></li>
               <li class="menu__items-choice"><a href="#">Форма отзыва</a></li>
               <li class="menu__items-choice"><a href="#">HTML academy</a></li>
           </ul>
-          <div class="menu__control"><img src="http://placehold.it/150x100"></div>
+          <div class="menu__logo">
+          <div class="menu__control"><img src="img/icon-menu.svg"></div>
         </div>
-          <div class="logo"><img src="http://placehold.it/150x100"></div>
+          <div class="logo"><img src="img/logo-sedona-mobile.svg"></div>
+        </div>
       </header>
       <main class="container">
           <div class="slogan">
-              <div class="slogan__text"><img src="http://placehold.it/150x100"></div>
+              <div class="slogan__text"><img src="img/text-sedona.svg"></div>
           </div>
           <div class="intro">
              <p class="intro__text">Оставьте свой отзыв</p>
@@ -110,25 +113,26 @@
                      <p>Опишите свои эмоции</p>
                   </div>
                   <div class="form__emotion-wrapper">
-                      <textarea id="text" name="text" rows="10" cols="50" placeholder="Опишите подробно все свои восторги">
+                    <textarea id="text" name="text" rows="10" cols="50"> <p> Опишите подробно все свои восторги </p>
                       </textarea>
                   </div>
-                </div>
+
                 <div class="buttons">
                   <input type="submit" value="Отправить отзыв">
+                </div>
                 </div>
         </form>
       </main>
     <footer class="page-footer container">
           <a href="#">#visitsedona</a>
           <div class="social">
-              <a class="social__link social__link--tw" href="#"></a>
-              <a class="social__link social__link--fb" href="#"></a>
-              <a class="social__link social__link--yt" href="#"></a>
+              <div class="social__link social__link--tw"><img src="img/icon-twitter.svg"></div>
+              <div class="social__link social__link--fb"><img src="img/icon-facebook.svg"></div>
+              <div class="social__link social__link--yt"><img src="img/icon-youtube.svg"></div>
           </div>
-          <section class="info">
+          <section class="footer-info">
               Разработано
-              <img src="http://placehold.it/150x100">
+              <img src="img/logo-htmlacademy.svg">
           </section>
       </footer>
   </body>
