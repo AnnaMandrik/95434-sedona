@@ -1,3 +1,4 @@
+/* Файл blocks/page-header.less */
 @media @tablet-widths {
 
   .page-header {
@@ -6,7 +7,7 @@
     min-height: 70px; /* минимальная высота содержания */
     padding-bottom: 400px;
   }
-  .slogan__text {
+   .slogan {
     position: absolute;
     bottom: 0;
 
@@ -15,43 +16,96 @@
   }
 }
 @media @desktop-widths {
-  page-header {
+
+  .page-header {
     padding-bottom: 648px;
   }
-
-  .slogan__text {
+  .slogan {
     height: 648px;
   }
 }
+/* Файл blocks/main-nav.less */
+.menu {
+  width: 320px;
+  margin: 0 auto;
+}
+.menu__items,
+.menu__items-logo {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu__items {
+  min-height: 225px; /* Временно для сетки */
+}
+
+.menu__items-logo {
+  min-height: 55px; /* Временно для сетки */
+}
 @media @tablet-widths {
 
-  .menu__items,
-  .menu__items-logo{
+.menu {
     width: auto;
     min-height: 70px;
     margin: 0;
   }
-   .menu__items {
+.menu__wrapper {
     .container();
     .clearfix();
   }
-   .menu__items {
-     float:left;
-     width: 570px;
+.menu__items {
+   float: left;
+    width: 570px;
     min-height: 70px; /* Временно для сетки */
-  }
-  .menu__items-logo {
+}
+
+  .menu__items-logo{
     float: right;
-    width: 60px;
-    min-height: 70px; /* Временно для сетки */
-  }
+  width: 60px;
+  min-height: 70px; /* Временно для сетки */
+ }
 }
 @media @desktop-widths {
 
   .menu__items {
     width: 780px;
   }
+
   .menu__items-logo {
     width: 160px;
+  }
+
+}
+/* Файл blocks/stats.less */
+
+.intro {
+  .container();
+}
+.pictures {
+  width: 100%;
+}
+@media @tablet-widths {
+  .intro{
+    .clearfix();
+  }
+
+  .pictures__text-wrapper,
+  .pictures__view {
+    .clearfix();
+    display: block;
+  }
+}
+@media @desktop-widths {
+
+  .intro {
+    .clearfix();
+  }
+   .pictures__text-wrapper {
+    float: left;
+    display: block;
+  }
+  .pictures__view{
+    float: right;
+    display: block;
   }
 }
