@@ -1,4 +1,38 @@
 .indent(@indent){
-  margin: @indent;
-  padding:@indent;
+  margin-top:@indent;
+  margin-bottom:@indent;
+   padding-left:@indent;
+}
+
+
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 640px;
+  }
+
+  @media @desktop-widths {
+    width: 960px;
+  }
+}
+
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
 }
