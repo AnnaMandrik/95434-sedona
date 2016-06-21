@@ -1,6 +1,3 @@
-.info{
-  .indent(5px);
-}
 .info__block{
   background-color: @grey;
 }
@@ -30,4 +27,19 @@
   text-transform: lowercase;
   color: @black;
 
+}
+@media @tablet-widths {
+  .info {
+  /*  .clearfix();*/
+       display: flex;
+    justify-content: space-between;
+  }
+    .info__block {
+        min-width: 256px;
+    }
+}
+@media @desktop-widths {
+    .info__block {
+        min-width: 400px;
+    }
 }

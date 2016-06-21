@@ -1,39 +1,34 @@
 .form__name-wrapper input[type="text"]{
   background-color: @grey-blue;
+    min-height: 60px;
 }
 textarea{
   background-color: @grey-blue;
 }
 
-.form__places-wrapper input [type="checkbox"]{
+.form__places-wrapper input[type="checkbox"]{
   background-color: @grey-blue;
   width: 55px;
   height: 55px;
 }
-.form__feeling-wrapper input [type="radio"]{
+.form__feeling-wrapper input[type="radio"]{
   background-color: @grey-blue;
+    width: 55px;
+   height: 55px;
 }
-.form__contacts-wrapper input [type="text"]{
+.form__contacts-wrapper input[type="text"]{
   background-color: @grey-blue;
+    min-height: 60px;
+   
 }
-.form__contacts-wrapper input [type="email"]{
+.form__contacts-wrapper input[type="email"]{
   background-color: @grey-blue;
+    min-height: 60px;
+    
 }
-.form__name{
-  .indent(5px);
-}
-.form__contacts{
-  .indent(5px);
-}
-.form__feeling{
-  .indent(5px);
-}
-.form__places{
-  .indent(5px);
-}
-.form__emotion{
-  .indent(5px);
-
+main .container {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .form__title{
   font-size: 18px;
@@ -63,5 +58,91 @@ label{
   line-height: 24px;
   text-transform: lowercase;
   color: @black;
+}
+.form {
+   .container-fluid ();
+}
+.form__name,
+.form__contacts,
+.form__feeling,
+.form__places,
+.form__emotion {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+@media @tablet-widths {
+    .form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .form__wrapper {
+        margin: auto;
+    }
+    .form__wrapper:nth-child(3) {
+        order: -1;   
+    }
+   
+    .form__emotion-wrapper {
+        min-width: auto;
+    }
+
+    .form__wrapper-place {
+       display: flex;
+        width: 648px;
+        flex-direction: column;
+    
+  }
+    .form__places-wrapper {
+        min-width: 220px;
+        min-height: 55px;
+        margin-left: 100px;
+       
+    }
+       
+     .form__w {
+        display: flex;
+         flex-direction: column;
+         font-size: 0px;
+         text-align: left;
+         justify-content: space-between;
+         
+        
+    }
+    .form__contacts-wrapper {
+        margin-bottom: 30px;
+      
+    }
+    .form__input input[type="text"],
+    .form__input input[type="email"] {
+        min-width: 648px;
+        text-align: left;   
+    }
+    
+  
+}
+@media @desktop-widths {
+    
+   .form__wrapper-place {
+     display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       flex-wrap: nowrap;
+     
+      
+    }
+      .form__w {
+          display: flex;
+         flex-direction: row;
+        justify-content: space-around; 
+          flex-wrap: nowrap;
+    }
+    .form__input {
+        min-width: 320px;
+    }
 }
 
