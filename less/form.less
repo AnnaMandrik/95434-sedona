@@ -46,8 +46,7 @@ textarea{
   line-height: 24px;
   text-transform: lowercase;
   color: @black;
-
-  width: 100%;
+  width: auto;
 }
 .form{
   text-align: center;
@@ -94,14 +93,20 @@ label{
     .form__wrapper-place {
        display: flex;
         width: 648px;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     
   }
     .form__places-wrapper {
         min-width: 220px;
         min-height: 55px;
-        margin-left: 100px;
-       
+        margin-left: 100px; 
+    }
+    .form__places-wrapper:nth-child(2) {
+        order: 1;
+    }
+    .form__places-wrapper:nth-child(4) {
+        order: 1;
     }
        
      .form__w {
@@ -110,6 +115,7 @@ label{
          font-size: 0px;
          text-align: left;
          justify-content: space-between;
+         flex-basis: auto;
          
         
     }
@@ -132,17 +138,23 @@ label{
         flex-direction: row;
         justify-content: space-around;
        flex-wrap: nowrap;
+       flex-basis: auto;
      
       
     }
-      .form__w {
-          display: flex;
+      .form__w { 
          flex-direction: row;
-        justify-content: space-around; 
+        justify-content: space-between;
           flex-wrap: nowrap;
+          flex-basis: auto;
     }
-    .form__input {
-        min-width: 320px;
+     .form__contacts-wrapper:first-child {
+         align-items: flex-end;
+         
+        
     }
+   .form__contacts-wrapper:last-child {
+         align-items: flex-start;
+        
 }
-
+}
